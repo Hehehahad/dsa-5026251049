@@ -1,4 +1,4 @@
-package lw01.prelab;
+package src.lw01.prelab;
 
 public abstract class PrintJob implements Chargeable {
     private final String id;
@@ -6,7 +6,7 @@ public abstract class PrintJob implements Chargeable {
 
     protected PrintJob(String id, int pages) {
         if (pages <= 0) {
-            throw new IllegalArgumentException("Pages must be positive.");
+            throw new IllegalArgumentException("Pages must be a positive number.");
         }
 
         this.id = id;
@@ -26,7 +26,7 @@ public abstract class PrintJob implements Chargeable {
 
     public int calculateCharge(int copies) {
         if (copies <= 0) {
-            throw new IllegalArgumentException("Copies must be positive.");
+            throw new IllegalArgumentException("Copies must be a positive number.");
         }
 
         return copies * calculateCharge();

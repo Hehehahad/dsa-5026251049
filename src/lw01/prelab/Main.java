@@ -1,4 +1,4 @@
-package lw01.prelab;
+package src.lw01.prelab;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -29,6 +29,4 @@ public class Main {
             System.out.println(job.summary());
         }
     }
-}
-
-{}
+}    
