@@ -9,7 +9,7 @@ import java.util.Queue;
 import java.util.Scanner;
 import java.util.Stack;
  
-public class BankTransactionProcessor {
+public class Main {
  
     public static void main(String[] args) {
  
